@@ -1,0 +1,11 @@
+version: "2.4"
+
+services:
+ react-native-vnc-real-device-on-host:
+  build:
+   context: ./
+   dockerfile: Dockerfile
+  ports:
+   - "5022:22"
+   - "8081:8081"
+   - "5901:5901"
